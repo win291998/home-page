@@ -1,0 +1,16 @@
+@mixin button($textColor: $white-color, $backgroud-color: $secondary-color) {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  background-color: $backgroud-color;
+  color: $textColor;
+  cursor: pointer;
+  transition: all 400ms ease;
+
+
+  &:hover {
+    background-color: lighten($backgroud-color, 8%);
+    box-shadow: 0 1rem 1.6rem rgba($color: $black-color, $alpha: .15);
+  }
+}
